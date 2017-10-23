@@ -1,11 +1,6 @@
 
 module.exports = 
 {
-	our_First_function: () => 
-	{
-	//...code that finally returns "hello world"
-	return "hello world";
-	},
 	rainDrops: (InputNum) =>
 	{
 		let factorlist = [], i;
@@ -42,8 +37,9 @@ module.exports =
             factorlist[q].toString();
        }
 } 
-console.log(emptyList);
+
 result = emptyList.join("").toString();
+return result;
 	}
 
 }

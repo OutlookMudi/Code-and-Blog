@@ -4,26 +4,21 @@ const rainDrops = require('../app.js');
 
 // tests
 
-describe('Function 1: Accept only hello world', () => {
-    it('Should accept only letters', () => {
-        let resultOfThisTest = from_appjs.our_First_function();
-        assert.equal(resultOfThisTest, 'hello world');    
-    });    
-});
-
-describe('Function 1: Accept only hello world', () => {
+describe('Rain Drops', () => {
     //
-    it('String', () =>{		
+    it('Should be string', () =>{		
 		assert.typeOf(rainDrops.rainDrops(560), 'String')
     }); 
-    it('String', () =>{		
-		assert.equal(true, 'boolean');
+    it('Should return pling', () =>{	
+        let resultOfThisTest = rainDrops.rainDrops(5);
+		assert.equal(resultOfThisTest, 'pling');
+    });
+    it('Should return plang', () =>{	
+        let resultOfThisTest = rainDrops.rainDrops(5);
+		assert.equal(resultOfThisTest, 'plang');
     });  
-    
-    it('String', () =>{		
-		assert.isNull(err, 'there was no error');
-    }); 
-    
-    
-    
+    it('Should return plong', () =>{	
+        let resultOfThisTest = rainDrops.rainDrops(7);
+		assert.equal(resultOfThisTest, 'plong');
+    });    
 });
