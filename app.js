@@ -11,5 +11,6 @@ module.exports =
       console.log(emptyList); // print to console. 
       return emptyList; // for use in other programs
   };
-  rainDrops(2);
+  
 }
+rainDrops(2);
